@@ -1,0 +1,9 @@
+# Equivalent of SET and GET
+capitals = {}
+capitals["Bahamas"] = "Nassau"
+capitals["Croatia"] = "Zagreb"
+print(capitals.get("Croatia"))
+print(capitals.get("Japan"))
+
+
+# Equivalent of MSET and MGET
