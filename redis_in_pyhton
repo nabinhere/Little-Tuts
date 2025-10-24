@@ -1,3 +1,8 @@
+# Original Tutorial Source: Real Python
+# https://realpython.com/python-redis/
+
+
+
 # Equivalent of SET and GET
 capitals = {}
 capitals["Bahamas"] = "Nassau"
@@ -7,3 +12,13 @@ print(capitals.get("Japan"))
 
 
 # Equivalent of MSET and MGET
+capitals.update({
+    "Lebanon": "Beirut",
+    "Norway": "Oslo",
+    "France": "Paris",
+})
+print([capitals.get(k) for k in ("Lebanon", "Norway", "Bahamas")])
+
+# Check for existence
+# Equivalent of EXISTS
+print("Norway" in capitals)
